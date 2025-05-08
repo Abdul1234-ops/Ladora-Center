@@ -12,6 +12,7 @@
     <meta name="keywords" content="تجميل, عناية بالبشرة, طب تجميلي, مركز تجميل, ليزر, عيادة تجميل, طب الأسنان" />
     <meta name="author" content="مركز العناية الطبية" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="{% static 'home/imgs/LOGO.png' %}" >
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -216,7 +217,7 @@
     </section>
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">مشاريعنا</h2>
+            <h2 class="text-3xl font-bold text-center mb-12">{% trans "مشاريعنا" %}</h2>
             {% for project in projects %}
                 <div class="flex flex-col md:flex-row {% if forloop.counter0|divisibleby:2 %}md:flex-row-reverse{% endif %} items-center mb-12">
                     <div class="md:w-1/2">
